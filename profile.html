@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>略歴 | 山本桂 彫刻</title>
+<meta name="description" content="彫刻家・山本桂の略歴と展覧会歴。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="eyebrow">石の彫刻</div>
+  <h1><a href="index.html">山本桂 彫刻</a></h1>
+</header>
+<div class="groove"></div>
+<nav class="main-nav">
+  <a href="index.html">ホーム</a>
+  <a href="profile.html" class="active">略歴</a>
+  <a href="blog.html">ブログ</a>
+</nav>
+
+<div class="wrap">
+  <main>
+    <img class="profile-photo" src="images/profile.jpg" alt="山本桂">
+    <p class="bio-lead">ものつくりが好きな彫刻家です。<br>好きなものを自由に作る、「焼き物造形クラブ」主催</p>
+
+    <h2 class="section-title">略歴</h2>
+
+    <div class="lang-toggle">
+      <button id="btn-ja" class="active">日本語</button>
+      <button id="btn-en">English</button>
+    </div>
+
+    <ul class="history" id="history-ja">
+      <li><span class="year">1960</span><span>東京生まれ</span></li>
+      <li><span class="year">1986</span><span>東京藝術大学美術学部彫刻科卒業</span></li>
+      <li><span class="year">1990</span><span>「山本桂 石彫展」 みゆき画廊</span></li>
+      <li><span class="year">1998</span><span>「3人展」 港北東急SC 横浜</span></li>
+      <li><span class="year">2001</span><span>「石彫５」 和田画廊 東京('02, '03, '04, '05)</span></li>
+      <li><span class="year">2002</span><span>「2人展」 ギャラリーTogeisha 東京</span></li>
+      <li><span class="year">2003</span><span>「動物展」 KPLANET 東京</span></li>
+      <li><span class="year">2004</span><span>「2人展」 ギャラリーTogeisha 東京</span></li>
+      <li><span class="year">2006</span><span>「2人展」 万国橋ギャラリー 横浜</span></li>
+      <li><span class="year">2007</span><span>「小品展」 みゆき画廊 東京</span></li>
+      <li><span class="year">2009</span><span>「おかし、たのし、おもしろし展」 ギャラリー澄光 東京</span></li>
+      <li><span class="year">2009</span><span>「加賀谷澄江-Bally-へのオマージュ展」 みゆき画廊</span></li>
+      <li><span class="year">2010</span><span>「シナジー展」 建築会館 東京</span></li>
+      <li><span class="year">2012</span><span>「再生の息吹展」 六本木画廊</span></li>
+      <li><span class="year">2014</span><span>「土と石のかたち展」 小杉画廊 川崎</span></li>
+      <li><span class="year">2019</span><span>「山本桂 彫刻展」 うしお画廊 東京</span></li>
+      <li><span class="year">作品設置</span><span>岐阜県大野町総合センター図書館内モニュメント<br>四日市グランドメゾン中央前モニュメント<br>狛江市集合住宅前モニュメント</span></li>
+    </ul>
+
+    <ul class="history" id="history-en">
+      <li><span class="year">1960</span><span>Born in Tokyo</span></li>
+      <li><span class="year">1986</span><span>Graduated from Tokyo University of the Arts, Department of Sculpture</span></li>
+      <li><span class="year">1990</span><span>Solo exhibition, Miyuki Gallery</span></li>
+      <li><span class="year">1998</span><span>"Three Artist Exhibition," Kohoku Tokyu S.C., Yokohama</span></li>
+      <li><span class="year">2001</span><span>"Stone Sculpture 5," Wada Gallery, Tokyo ('02, '03, '04, '05)</span></li>
+      <li><span class="year">2002</span><span>"Two Artists Exhibition," Gallery Togeisha, Tokyo</span></li>
+      <li><span class="year">2003</span><span>"Animal Exhibition," K.PLANET, Tokyo</span></li>
+      <li><span class="year">2006</span><span>"Two Artists Exhibition," Bankokubashi Gallery, Yokohama</span></li>
+      <li><span class="year">2007</span><span>"Small Size Exhibition," Miyuki Gallery</span></li>
+      <li><span class="year">2009</span><span>"Okashi, Tanoshi, Omoshiroshi," Gallery Choukou, Tokyo</span></li>
+      <li><span class="year">2009</span><span>"Homage to Kagaya Sumie – Bally," Miyuki Gallery</span></li>
+      <li><span class="year">2010</span><span>"Synergy," Architecture Hall, Tokyo</span></li>
+      <li><span class="year">2012</span><span>"Breath of Rebirth," Roppongi Gallery</span></li>
+      <li><span class="year">2014</span><span>"The Shape of Clay & Stone," Kosugi Gallery, Kawasaki</span></li>
+      <li><span class="year">2019</span><span>Solo exhibition, Usio Gallery, Tokyo</span></li>
+      <li><span class="year">Public&nbsp;Works</span><span>Oono Town Community Center Library, Gifu<br>Yokkaichi Grand Maison Chuo entrance<br>Komae City apartment complex</span></li>
+    </ul>
+  </main>
+
+  <div class="insta-cta">
+    <a class="insta-button" href="http://instagram.com/yamamotokatsura6060" target="_blank" rel="noopener">
+      Instagram で最新の作品を見る →
+    </a>
+  </div>
+</div>
+
+<footer>© <span id="year"></span> 山本桂 彫刻</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const btnJa = document.getElementById('btn-ja');
+const btnEn = document.getElementById('btn-en');
+const listJa = document.getElementById('history-ja');
+const listEn = document.getElementById('history-en');
+
+btnJa.addEventListener('click', () => {
+  listJa.style.display = '';
+  listEn.style.display = 'none';
+  btnJa.classList.add('active');
+  btnEn.classList.remove('active');
+});
+
+btnEn.addEventListener('click', () => {
+  listJa.style.display = 'none';
+  listEn.style.display = '';
+  btnEn.classList.add('active');
+  btnJa.classList.remove('active');
+});
+</script>
+
+</body>
+</html>
